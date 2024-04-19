@@ -4,7 +4,6 @@ import java.time.Year;
 import java.time.MonthDay;
 
 public class Employee {
-    private String employeeId;
     private EmployeeData employeeData;
     private Grade grade;
     private int monthlySalary;
@@ -12,8 +11,7 @@ public class Employee {
     private int annualDeductible;
     private FamilyData familyData;
 
-    public Employee(String employeeId, EmployeeData employeeData, Grade grade) {
-        this.employeeId = employeeId;
+    public Employee(EmployeeData employeeData, Grade grade) {
         this.employeeData = employeeData;
         this.grade = grade;
         this.familyData = new FamilyData();
